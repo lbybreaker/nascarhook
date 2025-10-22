@@ -1,0 +1,240 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "airflow", "nascarhook\nascarhook.vcxproj", "{2BF41D55-78F9-46A5-B3AC-22E8906A6300}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8} = {0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}
+		{7F125D82-3D45-4477-9176-0942AAEC507F} = {7F125D82-3D45-4477-9176-0942AAEC507F}
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4} = {B1219414-D0AE-49EB-BCFA-5602D1E44BD4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "polyhook", "polyhook", "{7E02E300-E24B-4FD3-913B-27AEADE785B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nlohmann", "nlohmann", "{306A9D3F-7275-43CE-97EA-E829AE424CF9}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\adl_serializer.hpp = dependencies\nlohmann\nlohmann\adl_serializer.hpp
+		dependencies\nlohmann\nlohmann\byte_container_with_subtype.hpp = dependencies\nlohmann\nlohmann\byte_container_with_subtype.hpp
+		dependencies\nlohmann\nlohmann\json.hpp = dependencies\nlohmann\nlohmann\json.hpp
+		dependencies\nlohmann\nlohmann\json_fwd.hpp = dependencies\nlohmann\nlohmann\json_fwd.hpp
+		dependencies\nlohmann\nlohmann\ordered_map.hpp = dependencies\nlohmann\nlohmann\ordered_map.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "detail", "detail", "{36CF9813-DF01-415C-BB18-75E2B90CA76F}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\abi_macros.hpp = dependencies\nlohmann\nlohmann\detail\abi_macros.hpp
+		dependencies\nlohmann\nlohmann\detail\exceptions.hpp = dependencies\nlohmann\nlohmann\detail\exceptions.hpp
+		dependencies\nlohmann\nlohmann\detail\hash.hpp = dependencies\nlohmann\nlohmann\detail\hash.hpp
+		dependencies\nlohmann\nlohmann\detail\json_custom_base_class.hpp = dependencies\nlohmann\nlohmann\detail\json_custom_base_class.hpp
+		dependencies\nlohmann\nlohmann\detail\json_pointer.hpp = dependencies\nlohmann\nlohmann\detail\json_pointer.hpp
+		dependencies\nlohmann\nlohmann\detail\json_ref.hpp = dependencies\nlohmann\nlohmann\detail\json_ref.hpp
+		dependencies\nlohmann\nlohmann\detail\macro_scope.hpp = dependencies\nlohmann\nlohmann\detail\macro_scope.hpp
+		dependencies\nlohmann\nlohmann\detail\macro_unscope.hpp = dependencies\nlohmann\nlohmann\detail\macro_unscope.hpp
+		dependencies\nlohmann\nlohmann\detail\string_concat.hpp = dependencies\nlohmann\nlohmann\detail\string_concat.hpp
+		dependencies\nlohmann\nlohmann\detail\string_escape.hpp = dependencies\nlohmann\nlohmann\detail\string_escape.hpp
+		dependencies\nlohmann\nlohmann\detail\value_t.hpp = dependencies\nlohmann\nlohmann\detail\value_t.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thirdparty", "thirdparty", "{FA7F5568-2A85-4DAB-ABFB-2B458C149058}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conversions", "conversions", "{E0FB0591-F555-45CD-B91D-D1D80F5E353E}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\conversions\from_json.hpp = dependencies\nlohmann\nlohmann\detail\conversions\from_json.hpp
+		dependencies\nlohmann\nlohmann\detail\conversions\to_chars.hpp = dependencies\nlohmann\nlohmann\detail\conversions\to_chars.hpp
+		dependencies\nlohmann\nlohmann\detail\conversions\to_json.hpp = dependencies\nlohmann\nlohmann\detail\conversions\to_json.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "input", "input", "{7CDD237C-B6F7-46A8-83CF-AB308322740F}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\input\binary_reader.hpp = dependencies\nlohmann\nlohmann\detail\input\binary_reader.hpp
+		dependencies\nlohmann\nlohmann\detail\input\input_adapters.hpp = dependencies\nlohmann\nlohmann\detail\input\input_adapters.hpp
+		dependencies\nlohmann\nlohmann\detail\input\json_sax.hpp = dependencies\nlohmann\nlohmann\detail\input\json_sax.hpp
+		dependencies\nlohmann\nlohmann\detail\input\lexer.hpp = dependencies\nlohmann\nlohmann\detail\input\lexer.hpp
+		dependencies\nlohmann\nlohmann\detail\input\parser.hpp = dependencies\nlohmann\nlohmann\detail\input\parser.hpp
+		dependencies\nlohmann\nlohmann\detail\input\position_t.hpp = dependencies\nlohmann\nlohmann\detail\input\position_t.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iterators", "iterators", "{F5179E29-2A3E-4C96-842F-84AE2F8EFFA1}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\iterators\internal_iterator.hpp = dependencies\nlohmann\nlohmann\detail\iterators\internal_iterator.hpp
+		dependencies\nlohmann\nlohmann\detail\iterators\iteration_proxy.hpp = dependencies\nlohmann\nlohmann\detail\iterators\iteration_proxy.hpp
+		dependencies\nlohmann\nlohmann\detail\iterators\iterator_traits.hpp = dependencies\nlohmann\nlohmann\detail\iterators\iterator_traits.hpp
+		dependencies\nlohmann\nlohmann\detail\iterators\iter_impl.hpp = dependencies\nlohmann\nlohmann\detail\iterators\iter_impl.hpp
+		dependencies\nlohmann\nlohmann\detail\iterators\json_reverse_iterator.hpp = dependencies\nlohmann\nlohmann\detail\iterators\json_reverse_iterator.hpp
+		dependencies\nlohmann\nlohmann\detail\iterators\primitive_iterator.hpp = dependencies\nlohmann\nlohmann\detail\iterators\primitive_iterator.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "meta", "meta", "{7ED82214-F095-44D8-BD08-141B1D9807B3}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\meta\cpp_future.hpp = dependencies\nlohmann\nlohmann\detail\meta\cpp_future.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\detected.hpp = dependencies\nlohmann\nlohmann\detail\meta\detected.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\identity_tag.hpp = dependencies\nlohmann\nlohmann\detail\meta\identity_tag.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\is_sax.hpp = dependencies\nlohmann\nlohmann\detail\meta\is_sax.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\std_fs.hpp = dependencies\nlohmann\nlohmann\detail\meta\std_fs.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\type_traits.hpp = dependencies\nlohmann\nlohmann\detail\meta\type_traits.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\void_t.hpp = dependencies\nlohmann\nlohmann\detail\meta\void_t.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "output", "output", "{FB820C44-B5CD-4DC9-BB69-A9CB19E3328F}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\output\binary_writer.hpp = dependencies\nlohmann\nlohmann\detail\output\binary_writer.hpp
+		dependencies\nlohmann\nlohmann\detail\output\output_adapters.hpp = dependencies\nlohmann\nlohmann\detail\output\output_adapters.hpp
+		dependencies\nlohmann\nlohmann\detail\output\serializer.hpp = dependencies\nlohmann\nlohmann\detail\output\serializer.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hedley", "hedley", "{20F477C5-215C-4701-94D4-08FC9F104247}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\thirdparty\hedley\hedley.hpp = dependencies\nlohmann\nlohmann\thirdparty\hedley\hedley.hpp
+		dependencies\nlohmann\nlohmann\thirdparty\hedley\hedley_undef.hpp = dependencies\nlohmann\nlohmann\thirdparty\hedley\hedley_undef.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "call_std", "call_std", "{77CAFAED-D817-447A-9E01-482B0BC0D7BA}"
+	ProjectSection(SolutionItems) = preProject
+		dependencies\nlohmann\nlohmann\detail\meta\call_std\begin.hpp = dependencies\nlohmann\nlohmann\detail\meta\call_std\begin.hpp
+		dependencies\nlohmann\nlohmann\detail\meta\call_std\end.hpp = dependencies\nlohmann\nlohmann\detail\meta\call_std\end.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{308A5C31-3B14-486D-82C6-052F88E15841}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asm", "asm", "{EA0CD5E3-021D-41AB-A9E5-799CEF2D2411}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zydis", "zydis", "{9AC27FF0-AEF9-4CC6-A02B-AF9764E0CF50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asmjit", "dependencies\polyhook\dependencies\asmjit\asmjit.vcxproj", "{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asmtk", "dependencies\polyhook\dependencies\asmtk\asmtk.vcxproj", "{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70} = {B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zycore", "dependencies\polyhook\dependencies\zycore\zycore.vcxproj", "{43E49B22-9E16-453E-9753-78631D39495B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zydis", "dependencies\polyhook\dependencies\zydis\zydis.vcxproj", "{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}"
+	ProjectSection(ProjectDependencies) = postProject
+		{43E49B22-9E16-453E-9753-78631D39495B} = {43E49B22-9E16-453E-9753-78631D39495B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polyhook", "dependencies\polyhook\polyhook\polyhook.vcxproj", "{B1219414-D0AE-49EB-BCFA-5602D1E44BD4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219} = {27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}
+		{43E49B22-9E16-453E-9753-78631D39495B} = {43E49B22-9E16-453E-9753-78631D39495B}
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4} = {AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70} = {B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "luajit", "luajit", "{FC8C31C0-CBA5-48BB-9D8D-09DC0C67AF0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luajit", "dependencies\luajit\luajit\luajit.vcxproj", "{7F125D82-3D45-4477-9176-0942AAEC507F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB} = {A6631859-D4B0-4C87-AAFE-07875D0A06FB}
+		{F76800CC-31A1-46E7-B0F7-4573910DC365} = {F76800CC-31A1-46E7-B0F7-4573910DC365}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{2187ABDC-948B-47DE-A671-EC59DD00EDD3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "minilua", "dependencies\luajit\dependencies\minilua\minilua.vcxproj", "{F76800CC-31A1-46E7-B0F7-4573910DC365}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "buildvm", "dependencies\luajit\dependencies\buildvm\buildvm.vcxproj", "{A6631859-D4B0-4C87-AAFE-07875D0A06FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F76800CC-31A1-46E7-B0F7-4573910DC365} = {F76800CC-31A1-46E7-B0F7-4573910DC365}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgui", "dependencies\imgui\imgui.vcxproj", "{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986} = {692A4ECC-B698-4CD6-A025-1F8BFA35E986}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgui", "imgui", "{E6A8F20A-624D-4DBA-B4B6-3BB59D607B39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "freetype", "freetype", "{F638FBDC-276D-49C6-8520-DFC87B4D3C90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freetype", "dependencies\freetype\freetype.vcxproj", "{692A4ECC-B698-4CD6-A025-1F8BFA35E986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|x86 = debug|x86
+		release|x86 = release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF41D55-78F9-46A5-B3AC-22E8906A6300}.debug|x86.ActiveCfg = debug|Win32
+		{2BF41D55-78F9-46A5-B3AC-22E8906A6300}.debug|x86.Build.0 = debug|Win32
+		{2BF41D55-78F9-46A5-B3AC-22E8906A6300}.release|x86.ActiveCfg = release|Win32
+		{2BF41D55-78F9-46A5-B3AC-22E8906A6300}.release|x86.Build.0 = release|Win32
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}.debug|x86.ActiveCfg = debug|Win32
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}.debug|x86.Build.0 = debug|Win32
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}.release|x86.ActiveCfg = release|Win32
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70}.release|x86.Build.0 = release|Win32
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}.debug|x86.ActiveCfg = debug|Win32
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}.debug|x86.Build.0 = debug|Win32
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}.release|x86.ActiveCfg = release|Win32
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4}.release|x86.Build.0 = release|Win32
+		{43E49B22-9E16-453E-9753-78631D39495B}.debug|x86.ActiveCfg = debug|Win32
+		{43E49B22-9E16-453E-9753-78631D39495B}.debug|x86.Build.0 = debug|Win32
+		{43E49B22-9E16-453E-9753-78631D39495B}.release|x86.ActiveCfg = release|Win32
+		{43E49B22-9E16-453E-9753-78631D39495B}.release|x86.Build.0 = release|Win32
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}.debug|x86.ActiveCfg = debug|Win32
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}.debug|x86.Build.0 = debug|Win32
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}.release|x86.ActiveCfg = release|Win32
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219}.release|x86.Build.0 = release|Win32
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4}.debug|x86.ActiveCfg = debug|Win32
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4}.debug|x86.Build.0 = debug|Win32
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4}.release|x86.ActiveCfg = release|Win32
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4}.release|x86.Build.0 = release|Win32
+		{7F125D82-3D45-4477-9176-0942AAEC507F}.debug|x86.ActiveCfg = debug|Win32
+		{7F125D82-3D45-4477-9176-0942AAEC507F}.debug|x86.Build.0 = debug|Win32
+		{7F125D82-3D45-4477-9176-0942AAEC507F}.release|x86.ActiveCfg = release|Win32
+		{7F125D82-3D45-4477-9176-0942AAEC507F}.release|x86.Build.0 = release|Win32
+		{F76800CC-31A1-46E7-B0F7-4573910DC365}.debug|x86.ActiveCfg = debug|Win32
+		{F76800CC-31A1-46E7-B0F7-4573910DC365}.debug|x86.Build.0 = debug|Win32
+		{F76800CC-31A1-46E7-B0F7-4573910DC365}.release|x86.ActiveCfg = release|Win32
+		{F76800CC-31A1-46E7-B0F7-4573910DC365}.release|x86.Build.0 = release|Win32
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB}.debug|x86.ActiveCfg = debug|Win32
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB}.debug|x86.Build.0 = debug|Win32
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB}.release|x86.ActiveCfg = release|Win32
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB}.release|x86.Build.0 = release|Win32
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}.debug|x86.ActiveCfg = debug|Win32
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}.debug|x86.Build.0 = debug|Win32
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}.release|x86.ActiveCfg = release|Win32
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8}.release|x86.Build.0 = release|Win32
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986}.debug|x86.ActiveCfg = debug|Win32
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986}.debug|x86.Build.0 = debug|Win32
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986}.release|x86.ActiveCfg = release|Win32
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986}.release|x86.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E02E300-E24B-4FD3-913B-27AEADE785B7} = {E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}
+		{306A9D3F-7275-43CE-97EA-E829AE424CF9} = {E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}
+		{36CF9813-DF01-415C-BB18-75E2B90CA76F} = {306A9D3F-7275-43CE-97EA-E829AE424CF9}
+		{FA7F5568-2A85-4DAB-ABFB-2B458C149058} = {306A9D3F-7275-43CE-97EA-E829AE424CF9}
+		{E0FB0591-F555-45CD-B91D-D1D80F5E353E} = {36CF9813-DF01-415C-BB18-75E2B90CA76F}
+		{7CDD237C-B6F7-46A8-83CF-AB308322740F} = {36CF9813-DF01-415C-BB18-75E2B90CA76F}
+		{F5179E29-2A3E-4C96-842F-84AE2F8EFFA1} = {36CF9813-DF01-415C-BB18-75E2B90CA76F}
+		{7ED82214-F095-44D8-BD08-141B1D9807B3} = {36CF9813-DF01-415C-BB18-75E2B90CA76F}
+		{FB820C44-B5CD-4DC9-BB69-A9CB19E3328F} = {36CF9813-DF01-415C-BB18-75E2B90CA76F}
+		{20F477C5-215C-4701-94D4-08FC9F104247} = {FA7F5568-2A85-4DAB-ABFB-2B458C149058}
+		{77CAFAED-D817-447A-9E01-482B0BC0D7BA} = {7ED82214-F095-44D8-BD08-141B1D9807B3}
+		{308A5C31-3B14-486D-82C6-052F88E15841} = {7E02E300-E24B-4FD3-913B-27AEADE785B7}
+		{EA0CD5E3-021D-41AB-A9E5-799CEF2D2411} = {308A5C31-3B14-486D-82C6-052F88E15841}
+		{9AC27FF0-AEF9-4CC6-A02B-AF9764E0CF50} = {308A5C31-3B14-486D-82C6-052F88E15841}
+		{B0B4B6F8-9E67-47D7-A052-7AA88C5B8F70} = {EA0CD5E3-021D-41AB-A9E5-799CEF2D2411}
+		{AA5D856E-6EFC-4E9F-80C4-6EA4F180E0B4} = {EA0CD5E3-021D-41AB-A9E5-799CEF2D2411}
+		{43E49B22-9E16-453E-9753-78631D39495B} = {9AC27FF0-AEF9-4CC6-A02B-AF9764E0CF50}
+		{27DC91BF-C2A7-4042-8C8C-C7B03FD1A219} = {9AC27FF0-AEF9-4CC6-A02B-AF9764E0CF50}
+		{B1219414-D0AE-49EB-BCFA-5602D1E44BD4} = {7E02E300-E24B-4FD3-913B-27AEADE785B7}
+		{FC8C31C0-CBA5-48BB-9D8D-09DC0C67AF0B} = {E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}
+		{7F125D82-3D45-4477-9176-0942AAEC507F} = {FC8C31C0-CBA5-48BB-9D8D-09DC0C67AF0B}
+		{2187ABDC-948B-47DE-A671-EC59DD00EDD3} = {FC8C31C0-CBA5-48BB-9D8D-09DC0C67AF0B}
+		{F76800CC-31A1-46E7-B0F7-4573910DC365} = {2187ABDC-948B-47DE-A671-EC59DD00EDD3}
+		{A6631859-D4B0-4C87-AAFE-07875D0A06FB} = {2187ABDC-948B-47DE-A671-EC59DD00EDD3}
+		{0FB76FEC-37F7-4420-8E11-16AAE4C8E2E8} = {E6A8F20A-624D-4DBA-B4B6-3BB59D607B39}
+		{E6A8F20A-624D-4DBA-B4B6-3BB59D607B39} = {E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}
+		{F638FBDC-276D-49C6-8520-DFC87B4D3C90} = {E70EDB36-BC4C-4BD5-B3DA-7D23FEF62FA5}
+		{692A4ECC-B698-4CD6-A025-1F8BFA35E986} = {F638FBDC-276D-49C6-8520-DFC87B4D3C90}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b1219414-d0ae-49eb-bcfa-5602d1e44bd4}</ProjectGuid>
+    <RootNamespace>polyhook</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <OutDir>$(SolutionDir)build\dependencies\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <OutDir>$(SolutionDir)build\dependencies\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(IncludePath);$(ProjectDir);$(ProjectDir)..\dependencies\asmjit\src\;$(ProjectDir)..\dependencies\asmtk\src\;$(ProjectDir)..\dependencies\zydis\include\;$(ProjectDir)..\dependencies\zycore\include\</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ASMJIT_STATIC;ASMTK_STATIC;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <UseFullPaths>false</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(IncludePath);$(ProjectDir);$(ProjectDir)..\dependencies\asmjit\src\;$(ProjectDir)..\dependencies\asmtk\src\;$(ProjectDir)..\dependencies\zydis\include\;$(ProjectDir)..\dependencies\zycore\include\</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <UseFullPaths>false</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ADetour.cpp" />
+    <ClCompile Include="sources\AVehHook.cpp" />
+    <ClCompile Include="sources\BreakPointHook.cpp" />
+    <ClCompile Include="sources\EatHook.cpp" />
+    <ClCompile Include="sources\ErrorLog.cpp" />
+    <ClCompile Include="sources\FBAllocator.cpp" />
+    <ClCompile Include="sources\HWBreakPointHook.cpp" />
+    <ClCompile Include="sources\IatHook.cpp" />
+    <ClCompile Include="sources\ILCallback.cpp" />
+    <ClCompile Include="sources\MemAccessor.cpp" />
+    <ClCompile Include="sources\MemProtector.cpp" />
+    <ClCompile Include="sources\Misc.cpp" />
+    <ClCompile Include="sources\PolyHookOs.cpp" />
+    <ClCompile Include="sources\RangeAllocator.cpp" />
+    <ClCompile Include="sources\StackCanary.cpp" />
+    <ClCompile Include="sources\TestEffectTracker.cpp" />
+    <ClCompile Include="sources\UID.cpp" />
+    <ClCompile Include="sources\VFuncSwapHook.cpp" />
+    <ClCompile Include="sources\VTableSwapHook.cpp" />
+    <ClCompile Include="sources\x64Detour.cpp" />
+    <ClCompile Include="sources\x86Detour.cpp" />
+    <ClCompile Include="sources\ZydisDisassembler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="polyhook2\Detour\ADetour.hpp" />
+    <ClInclude Include="polyhook2\Detour\ILCallback.hpp" />
+    <ClInclude Include="polyhook2\Detour\NatDetour.hpp" />
+    <ClInclude Include="polyhook2\Detour\x64Detour.hpp" />
+    <ClInclude Include="polyhook2\Detour\x86Detour.hpp" />
+    <ClInclude Include="polyhook2\Enums.hpp" />
+    <ClInclude Include="polyhook2\ErrorLog.hpp" />
+    <ClInclude Include="polyhook2\EventDispatcher.hpp" />
+    <ClInclude Include="polyhook2\Exceptions\AVehHook.hpp" />
+    <ClInclude Include="polyhook2\Exceptions\BreakPointHook.hpp" />
+    <ClInclude Include="polyhook2\Exceptions\HWBreakPointHook.hpp" />
+    <ClInclude Include="polyhook2\FBAllocator.hpp" />
+    <ClInclude Include="polyhook2\IHook.hpp" />
+    <ClInclude Include="polyhook2\Instruction.hpp" />
+    <ClInclude Include="polyhook2\MemAccessor.hpp" />
+    <ClInclude Include="polyhook2\MemProtector.hpp" />
+    <ClInclude Include="polyhook2\Misc.hpp" />
+    <ClInclude Include="polyhook2\PE\EatHook.hpp" />
+    <ClInclude Include="polyhook2\PE\IatHook.hpp" />
+    <ClInclude Include="polyhook2\PE\PEB.hpp" />
+    <ClInclude Include="polyhook2\PolyHookOs.hpp" />
+    <ClInclude Include="polyhook2\PolyHookOsIncludes.hpp" />
+    <ClInclude Include="polyhook2\RangeAllocator.hpp" />
+    <ClInclude Include="polyhook2\Tests\StackCanary.hpp" />
+    <ClInclude Include="polyhook2\Tests\TestEffectTracker.hpp" />
+    <ClInclude Include="polyhook2\UID.hpp" />
+    <ClInclude Include="polyhook2\Virtuals\VFuncSwapHook.hpp" />
+    <ClInclude Include="polyhook2\Virtuals\VTableSwapHook.hpp" />
+    <ClInclude Include="polyhook2\ZydisDisassembler.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

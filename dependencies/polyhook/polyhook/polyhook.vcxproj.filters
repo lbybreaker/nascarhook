@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="polyhook2">
+      <UniqueIdentifier>{c520c7f0-170b-4274-ae5f-527118fe2904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{a47f7c97-7cc9-42f7-ab12-3906ab7cd033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polyhook2\detour">
+      <UniqueIdentifier>{54c574fe-5f55-4c42-ade3-ba0ad6739268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polyhook2\exceptions">
+      <UniqueIdentifier>{cb3b4e79-82dd-4ce0-9256-3661a991dc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polyhook2\pe">
+      <UniqueIdentifier>{1090dfc3-1b61-44e6-b4ff-4f55ae4bafe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polyhook2\virtuals">
+      <UniqueIdentifier>{9930dba5-7adf-48d1-876a-72ce14d41935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polyhook2\tests">
+      <UniqueIdentifier>{7890d805-7cf2-4ab8-a208-9179024243b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\ADetour.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\AVehHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\BreakPointHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\EatHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\ErrorLog.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\FBAllocator.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\HWBreakPointHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\IatHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\ILCallback.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\MemAccessor.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\MemProtector.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Misc.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\PolyHookOs.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\RangeAllocator.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\StackCanary.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\TestEffectTracker.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\UID.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\VFuncSwapHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\VTableSwapHook.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\x64Detour.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\x86Detour.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\ZydisDisassembler.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="polyhook2\Detour\ADetour.hpp">
+      <Filter>polyhook2\detour</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Detour\ILCallback.hpp">
+      <Filter>polyhook2\detour</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Detour\NatDetour.hpp">
+      <Filter>polyhook2\detour</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Detour\x64Detour.hpp">
+      <Filter>polyhook2\detour</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Detour\x86Detour.hpp">
+      <Filter>polyhook2\detour</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Exceptions\AVehHook.hpp">
+      <Filter>polyhook2\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Exceptions\BreakPointHook.hpp">
+      <Filter>polyhook2\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Exceptions\HWBreakPointHook.hpp">
+      <Filter>polyhook2\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\PE\EatHook.hpp">
+      <Filter>polyhook2\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\PE\IatHook.hpp">
+      <Filter>polyhook2\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\PE\PEB.hpp">
+      <Filter>polyhook2\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Virtuals\VFuncSwapHook.hpp">
+      <Filter>polyhook2\virtuals</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Virtuals\VTableSwapHook.hpp">
+      <Filter>polyhook2\virtuals</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Enums.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\ErrorLog.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\EventDispatcher.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\FBAllocator.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\IHook.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Instruction.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\MemAccessor.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\MemProtector.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Misc.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\PolyHookOs.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\PolyHookOsIncludes.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\RangeAllocator.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\UID.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\ZydisDisassembler.hpp">
+      <Filter>polyhook2</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Tests\StackCanary.hpp">
+      <Filter>polyhook2\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="polyhook2\Tests\TestEffectTracker.hpp">
+      <Filter>polyhook2\tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

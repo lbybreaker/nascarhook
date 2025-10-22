@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="misc\detours.cpp" />
+    <ClCompile Include="misc\nascarhook_icon.cpp" />
+    <ClCompile Include="misc\render.cpp" />
+    <ClCompile Include="misc\utilities.cpp" />
+    <ClCompile Include="setup\cheat.cpp" />
+    <ClCompile Include="setup\entry.cpp" />
+    <ClCompile Include="setup\hooks.cpp" />
+    <ClCompile Include="setup\interfaces.cpp" />
+    <ClCompile Include="setup\modules.cpp" />
+    <ClCompile Include="setup\netvars.cpp" />
+    <ClCompile Include="setup\offsets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="misc\detours.h" />
+    <ClInclude Include="misc\nascarhook_icon.h" />
+    <ClInclude Include="misc\render.h" />
+    <ClInclude Include="misc\utilities.h" />
+    <ClInclude Include="setup\cheat.h" />
+    <ClInclude Include="setup\hooks.h" />
+    <ClInclude Include="setup\interfaces.h" />
+    <ClInclude Include="setup\modules.h" />
+    <ClInclude Include="setup\netvars.h" />
+    <ClInclude Include="setup\offsets.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2bf41d55-78f9-46a5-b3ac-22e8906a6300}</ProjectGuid>
+    <RootNamespace>airflow</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <OutDir>$(SolutionDir)build\dll\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)intermediate\</IntDir>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir)old\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)build\dependencies\polyhook\$(Configuration)\;$(SolutionDir)build\dependencies\freetype\$(Configuration)\;$(SolutionDir)build\dependencies\imgui\$(Configuration)\;$(SolutionDir)build\dependencies\luajit\$(Configuration)\;$(SolutionDir)build\dependencies\zydis\$(Configuration)\;$(DXSDK_DIR)Lib\x86\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <OutDir>$(SolutionDir)build\dll\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)intermediate\</IntDir>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir)old\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)build\dependencies\polyhook\$(Configuration)\;$(SolutionDir)build\dependencies\freetype\$(Configuration)\;$(SolutionDir)build\dependencies\imgui\$(Configuration)\;$(SolutionDir)build\dependencies\luajit\$(Configuration)\;$(SolutionDir)build\dependencies\zydis\$(Configuration)\;$(DXSDK_DIR)Lib\x86\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>imgui.lib;polyhook.lib;zydis.lib;luajit.lib;d3d9.lib;d3dx9d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>imgui.lib;polyhook.lib;zydis.lib;luajit.lib;d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

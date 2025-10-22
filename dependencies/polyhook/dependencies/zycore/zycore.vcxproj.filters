@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2453e3de-2cc9-441f-91c5-6b0a426178da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{ca64d8e8-1eb6-4086-86aa-ad5b6331e665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{46ad0972-679e-4e8b-b855-2aa29d4fe785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\zycore">
+      <UniqueIdentifier>{11a79692-a64d-4685-b307-a287143c8b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\zycore\api">
+      <UniqueIdentifier>{270b4309-af48-4910-93de-2e9dfe8114ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\zycore\internal">
+      <UniqueIdentifier>{6004e98a-ebb4-47ca-be12-30e8dc60ccd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\api">
+      <UniqueIdentifier>{3ec9df7d-7ded-4c93-9bb5-d87f0c52c0c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Zycore\Allocator.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\ArgParse.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Atomic.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Bitset.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Comparison.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Defines.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Format.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\LibC.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\List.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Object.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Status.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\String.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Types.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Vector.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Zycore.h">
+      <Filter>include\zycore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\API\Memory.h">
+      <Filter>include\zycore\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\API\Process.h">
+      <Filter>include\zycore\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\API\Synchronization.h">
+      <Filter>include\zycore\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\API\Terminal.h">
+      <Filter>include\zycore\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\API\Thread.h">
+      <Filter>include\zycore\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Internal\AtomicGNU.h">
+      <Filter>include\zycore\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zycore\Internal\AtomicMSVC.h">
+      <Filter>include\zycore\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\VersionInfo.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\API\Memory.c">
+      <Filter>src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\API\Process.c">
+      <Filter>src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\API\Synchronization.c">
+      <Filter>src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\API\Terminal.c">
+      <Filter>src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\API\Thread.c">
+      <Filter>src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Allocator.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArgParse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bitset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\List.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\String.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Zycore.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

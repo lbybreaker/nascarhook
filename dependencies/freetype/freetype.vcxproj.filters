@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="modules">
+      <UniqueIdentifier>{eb9f9cfe-300b-49ba-8e3f-9e1e3692d32b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\autofit\autofit.c" />
+    <ClCompile Include="src\bdf\bdf.c" />
+    <ClCompile Include="src\cff\cff.c" />
+    <ClCompile Include="src\dlg\dlgwrap.c" />
+    <ClCompile Include="src\base\ftbase.c" />
+    <ClCompile Include="src\cache\ftcache.c" />
+    <ClCompile Include="src\base\ftdebug.c" />
+    <ClCompile Include="src\gzip\ftgzip.c" />
+    <ClCompile Include="src\base\ftinit.c" />
+    <ClCompile Include="src\lzw\ftlzw.c" />
+    <ClCompile Include="src\base\ftsystem.c" />
+    <ClCompile Include="src\pcf\pcf.c" />
+    <ClCompile Include="src\pfr\pfr.c" />
+    <ClCompile Include="src\psaux\psaux.c" />
+    <ClCompile Include="src\pshinter\pshinter.c" />
+    <ClCompile Include="src\psnames\psmodule.c" />
+    <ClCompile Include="src\raster\raster.c" />
+    <ClCompile Include="src\sdf\sdf.c" />
+    <ClCompile Include="src\sfnt\sfnt.c" />
+    <ClCompile Include="src\smooth\smooth.c" />
+    <ClCompile Include="src\svg\svg.c" />
+    <ClCompile Include="src\truetype\truetype.c" />
+    <ClCompile Include="src\type1\type1.c" />
+    <ClCompile Include="src\cid\type1cid.c" />
+    <ClCompile Include="src\type42\type42.c" />
+    <ClCompile Include="src\winfonts\winfnt.c" />
+    <ClCompile Include="src\base\ftbbox.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftbdf.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftbitmap.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftcid.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftfstype.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftgasp.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftglyph.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftgxval.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftmm.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftotval.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftpatent.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftpfr.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftstroke.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftsynth.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\fttype1.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\ftwinfnt.c">
+      <Filter>modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
