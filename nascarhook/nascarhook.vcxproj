@@ -73,7 +73,7 @@
     <IntDir>$(OutDir)intermediate\</IntDir>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
-    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir)old\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir);$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)build\dependencies\polyhook\$(Configuration)\;$(SolutionDir)build\dependencies\freetype\$(Configuration)\;$(SolutionDir)build\dependencies\imgui\$(Configuration)\;$(SolutionDir)build\dependencies\luajit\$(Configuration)\;$(SolutionDir)build\dependencies\zydis\$(Configuration)\;$(DXSDK_DIR)Lib\x86\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
@@ -81,7 +81,7 @@
     <IntDir>$(OutDir)intermediate\</IntDir>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
-    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir)old\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dependencies\polyhook\dependencies\zycore\include\;$(SolutionDir)dependencies\polyhook\dependencies\zydis\include\;$(SolutionDir)dependencies\polyhook\polyhook\;$(SolutionDir)dependencies\freetype\include\;$(SolutionDir)dependencies\imgui\include\;$(SolutionDir)dependencies\luajit\luajit\src\;$(SolutionDir)dependencies\nlohmann\;$(DXSDK_DIR)Include\;$(ProjectDir);$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)build\dependencies\polyhook\$(Configuration)\;$(SolutionDir)build\dependencies\freetype\$(Configuration)\;$(SolutionDir)build\dependencies\imgui\$(Configuration)\;$(SolutionDir)build\dependencies\luajit\$(Configuration)\;$(SolutionDir)build\dependencies\zydis\$(Configuration)\;$(DXSDK_DIR)Lib\x86\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">

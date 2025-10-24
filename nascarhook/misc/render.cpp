@@ -34,26 +34,12 @@ namespace render
                draw_list_type == e_draw_list_foreground ? ImGui::GetForegroundDrawList( ) :
                draw_list_type == e_draw_list_window     ? ImGui::GetWindowDrawList( ) : nullptr;
     }
-
-    ImVec2 get_text_size( ImFont* font, const char* text )
-    {
-        float  font_size = font->FontSize;
-        ImVec2 text_size = { };
-
-        if ( !text )
-            return ImVec2( 0.f, font_size );
-
-        text_size = font->CalcTextSizeA( font_size, FLT_MAX, -1.f, text );
-
-        text_size.x = IM_FLOOR( text_size.x + 0.9f ); // 0.99999f
-
-        return text_size;
-    }
 }}
 
 bool cheat::render::initialize( )
 {
     D3DDEVICE_CREATION_PARAMETERS creation_parameters = { };
+    ImGuiIO*                      io = { };
 
     if ( initialized )
         return false;
@@ -69,8 +55,10 @@ bool cheat::render::initialize( )
     if ( !ImGui::CreateContext( ) )
         return false;
 
-    ImGui::GetIO( ).IniFilename = nullptr;
-    ImGui::GetIO( ).ConfigFlags |= ImGuiConfigFlags_NoMouseCursorChange;
+    io = &ImGui::GetIO( );
+
+    io->IniFilename = nullptr;
+    io->ConfigFlags |= ImGuiConfigFlags_NoMouseCursorChange;
 
     if ( !ImGui_ImplDX9_Init( device ) )
         return false;
@@ -78,8 +66,8 @@ bool cheat::render::initialize( )
     if ( !ImGui_ImplWin32_Init( creation_parameters.hFocusWindow ) )
         return false;
 
-    fonts[ e_font_default    ] = ImGui::GetIO( ).Fonts->AddFontDefault( );
-    fonts[ e_font_comic_sans ] = ImGui::GetIO( ).Fonts->AddFontFromFileTTF( "C:\\Windows\\Fonts\\comic.ttf", 48.f );
+    fonts[ e_font_default    ] = io->Fonts->AddFontDefault( );
+    fonts[ e_font_comic_sans ] = io->Fonts->AddFontFromFileTTF( "C:\\Windows\\Fonts\\comic.ttf", 48.f );
 
     if ( D3DXCreateTextureFromFileInMemory( device, texture_data::nascarhook_logo, sizeof( texture_data::nascarhook_logo ), &textures[ e_texture_nascarhook_icon ] ) != D3D_OK )
         return false;

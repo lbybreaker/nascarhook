@@ -1,119 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="new">
-      <UniqueIdentifier>{14b619b0-4d4b-480c-a095-f4d12169f633}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup">
-      <UniqueIdentifier>{8ddbd221-e705-4fb4-a622-d44898361714}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup\hooks">
-      <UniqueIdentifier>{ed9d439d-37dd-406c-b40d-166de88602e0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup\signatures">
-      <UniqueIdentifier>{bfa26528-ee6f-490a-8bd3-a601a2fd6bbf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup\netvars">
-      <UniqueIdentifier>{d28570da-e90e-493f-96e2-b36ad69d14ac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup\interfaces">
-      <UniqueIdentifier>{de03932d-1fff-4ecb-a150-6d584d9eb0e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\setup\cheat">
-      <UniqueIdentifier>{53ad1107-ed36-41b0-aec4-fa59c055c516}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc">
-      <UniqueIdentifier>{c8c4bab7-3ac5-4f81-90cc-b7a682ae893d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\sdk">
-      <UniqueIdentifier>{cdb41dff-1110-4c42-8937-11bd27d42848}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\utilities">
-      <UniqueIdentifier>{9661be4f-c8cc-4326-9497-7ba5f0ea75a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\render">
-      <UniqueIdentifier>{0ec414ba-879a-45cd-879c-214e10d13be4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\render\assets">
-      <UniqueIdentifier>{666f6c04-a976-454d-9b11-f72a0d0e7504}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\render\assets\fonts">
-      <UniqueIdentifier>{72470f09-6305-4be0-ad37-eb50a34ae410}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\misc\render\assets\textures">
-      <UniqueIdentifier>{7a51e501-6683-45b6-aa51-fad38496aa9f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features">
-      <UniqueIdentifier>{343067ad-bef3-40f1-b6b7-51e3355bf63d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\visuals">
-      <UniqueIdentifier>{49cba791-59bb-4c4b-b9c1-f1b0c0440c8e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\visuals\chams">
-      <UniqueIdentifier>{1063769a-a433-4528-a182-7daba49def4a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\visuals\esp">
-      <UniqueIdentifier>{1c7a5325-9f69-4418-93f4-698563211a1e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\misc">
-      <UniqueIdentifier>{05e822e6-ecbb-4508-b2d1-0c6ecd4b2354}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\rage">
-      <UniqueIdentifier>{930ad495-0a5f-4062-8028-ebeef2daf440}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\rage\resolver">
-      <UniqueIdentifier>{15cc262d-5e4d-4293-82b4-8bc2e64054e1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\rage\lagcomp">
-      <UniqueIdentifier>{23f2e2aa-d0a3-457b-8812-1ffa5b7df645}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\rage\animations">
-      <UniqueIdentifier>{dd7fa834-9011-48c4-bada-55bfb2586d81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\rage\antiaim">
-      <UniqueIdentifier>{2d2aa214-03fc-4ac8-bfc9-e5ba0e9bdcbc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\lua">
-      <UniqueIdentifier>{2f8717dd-9465-4fff-ad80-b1174e871451}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\lua\script">
-      <UniqueIdentifier>{007ddbaa-de48-47f0-ab43-6ac9ac93af36}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\lua\state">
-      <UniqueIdentifier>{e9a26aa8-95b9-493a-b882-14ebceba1b3b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="new\features\menu">
-      <UniqueIdentifier>{67abdc01-7fd3-4c49-a9c4-f0f924e79cd4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="old">
-      <UniqueIdentifier>{9646f64b-c8a9-4ac2-8e26-81aada5a65fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\features">
-      <UniqueIdentifier>{33326546-3374-4966-ba40-f61daa671c14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc">
-      <UniqueIdentifier>{960db9ff-147e-44ba-8be4-ecd39f8ad323}</UniqueIdentifier>
+      <UniqueIdentifier>{476a24dc-8d18-4637-9760-91c2a5140dbb}</UniqueIdentifier>
     </Filter>
     <Filter Include="old\setup">
       <UniqueIdentifier>{cff770a3-b287-46cb-a191-01e0c2d928b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\detours">
-      <UniqueIdentifier>{c5d6db53-c438-4628-ae77-20289cc6b9db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\render">
-      <UniqueIdentifier>{6dfd809e-f0f5-40b6-8a9b-f75937652bbd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\utilities">
-      <UniqueIdentifier>{3f5f029a-532c-44b5-9a8c-ecea1f05478e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\render\assets">
-      <UniqueIdentifier>{ef974ce3-054d-4c29-99ff-61aa220598a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\render\assets\textures">
-      <UniqueIdentifier>{974be246-cd42-4025-9036-693fef718b29}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="old\misc\render\assets\fonts">
-      <UniqueIdentifier>{27014b40-ae91-4717-bfd4-35638fb7aa66}</UniqueIdentifier>
     </Filter>
     <Filter Include="old\setup\cheat">
       <UniqueIdentifier>{0afe1077-dfdf-4b23-905b-afb7707029e8}</UniqueIdentifier>
@@ -133,104 +25,138 @@
     <Filter Include="old\setup\offsets">
       <UniqueIdentifier>{e03ea5ba-dd5c-4a9f-982e-7b026cdf55d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="old\misc">
+      <UniqueIdentifier>{960db9ff-147e-44ba-8be4-ecd39f8ad323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\detours">
+      <UniqueIdentifier>{c5d6db53-c438-4628-ae77-20289cc6b9db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\render">
+      <UniqueIdentifier>{6dfd809e-f0f5-40b6-8a9b-f75937652bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\render\assets">
+      <UniqueIdentifier>{ef974ce3-054d-4c29-99ff-61aa220598a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\render\assets\textures">
+      <UniqueIdentifier>{974be246-cd42-4025-9036-693fef718b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\render\assets\fonts">
+      <UniqueIdentifier>{27014b40-ae91-4717-bfd4-35638fb7aa66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\misc\utilities">
+      <UniqueIdentifier>{3f5f029a-532c-44b5-9a8c-ecea1f05478e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features">
+      <UniqueIdentifier>{33326546-3374-4966-ba40-f61daa671c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\visuals">
+      <UniqueIdentifier>{49cba791-59bb-4c4b-b9c1-f1b0c0440c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\visuals\chams">
+      <UniqueIdentifier>{1063769a-a433-4528-a182-7daba49def4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\visuals\esp">
+      <UniqueIdentifier>{1c7a5325-9f69-4418-93f4-698563211a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\lua">
+      <UniqueIdentifier>{2f8717dd-9465-4fff-ad80-b1174e871451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\lua\script">
+      <UniqueIdentifier>{007ddbaa-de48-47f0-ab43-6ac9ac93af36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\lua\state">
+      <UniqueIdentifier>{e9a26aa8-95b9-493a-b882-14ebceba1b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\menu">
+      <UniqueIdentifier>{67abdc01-7fd3-4c49-a9c4-f0f924e79cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\misc">
+      <UniqueIdentifier>{05e822e6-ecbb-4508-b2d1-0c6ecd4b2354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\rage">
+      <UniqueIdentifier>{930ad495-0a5f-4062-8028-ebeef2daf440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\rage\resolver">
+      <UniqueIdentifier>{15cc262d-5e4d-4293-82b4-8bc2e64054e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\rage\lagcomp">
+      <UniqueIdentifier>{23f2e2aa-d0a3-457b-8812-1ffa5b7df645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\rage\animations">
+      <UniqueIdentifier>{dd7fa834-9011-48c4-bada-55bfb2586d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old\features\rage\antiaim">
+      <UniqueIdentifier>{2d2aa214-03fc-4ac8-bfc9-e5ba0e9bdcbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="new">
+      <UniqueIdentifier>{b8e61812-00c4-4c51-84c1-5dccfa2a5615}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="new\setup\signatures.h">
-      <Filter>new\setup\signatures</Filter>
-    </None>
-    <None Include="new\setup\signatures.cpp">
-      <Filter>new\setup\signatures</Filter>
-    </None>
-    <None Include="new\setup\netvars.h">
-      <Filter>new\setup\netvars</Filter>
-    </None>
-    <None Include="new\setup\netvars.cpp">
-      <Filter>new\setup\netvars</Filter>
-    </None>
-    <None Include="new\setup\interfaces.h">
-      <Filter>new\setup\interfaces</Filter>
-    </None>
-    <None Include="new\setup\interfaces.cpp">
-      <Filter>new\setup\interfaces</Filter>
-    </None>
-    <None Include="new\setup\hooks.h">
-      <Filter>new\setup\hooks</Filter>
-    </None>
-    <None Include="new\setup\hooks.cpp">
-      <Filter>new\setup\hooks</Filter>
-    </None>
-    <None Include="new\setup\cheat.h">
-      <Filter>new\setup\cheat</Filter>
-    </None>
-    <None Include="new\setup\cheat.cpp">
-      <Filter>new\setup\cheat</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="old\misc\utilities.cpp">
-      <Filter>old\misc\utilities</Filter>
+    <ClCompile Include="setup\cheat.cpp">
+      <Filter>old\setup\cheat</Filter>
     </ClCompile>
-    <ClCompile Include="old\misc\detours.cpp">
-      <Filter>old\misc\detours</Filter>
-    </ClCompile>
-    <ClCompile Include="old\misc\render.cpp">
-      <Filter>old\misc\render</Filter>
-    </ClCompile>
-    <ClCompile Include="old\misc\nascarhook_icon.cpp">
-      <Filter>old\misc\render\assets\textures</Filter>
-    </ClCompile>
-    <ClCompile Include="old\setup\entry.cpp">
+    <ClCompile Include="setup\entry.cpp">
       <Filter>old\setup</Filter>
     </ClCompile>
-    <ClCompile Include="old\setup\cheat.cpp">
-      <Filter>old\setup\cheat</Filter>
-    </ClCompile>
-    <ClCompile Include="old\setup\hooks.cpp">
+    <ClCompile Include="setup\hooks.cpp">
       <Filter>old\setup\hooks</Filter>
     </ClCompile>
-    <ClCompile Include="old\setup\interfaces.cpp">
+    <ClCompile Include="setup\interfaces.cpp">
       <Filter>old\setup\interfaces</Filter>
     </ClCompile>
-    <ClCompile Include="old\setup\modules.cpp">
+    <ClCompile Include="setup\modules.cpp">
       <Filter>old\setup\modules</Filter>
     </ClCompile>
-    <ClCompile Include="old\setup\netvars.cpp">
+    <ClCompile Include="setup\netvars.cpp">
       <Filter>old\setup\netvars</Filter>
     </ClCompile>
-    <ClCompile Include="old\setup\offsets.cpp">
+    <ClCompile Include="setup\offsets.cpp">
       <Filter>old\setup\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\nascarhook_icon.cpp">
+      <Filter>old\misc\render\assets\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\detours.cpp">
+      <Filter>old\misc\detours</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\render.cpp">
+      <Filter>old\misc\render</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\utilities.cpp">
+      <Filter>old\misc\utilities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="old\misc\utilities.h">
-      <Filter>old\misc\utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="old\misc\detours.h">
-      <Filter>old\misc\detours</Filter>
-    </ClInclude>
-    <ClInclude Include="old\misc\render.h">
-      <Filter>old\misc\render</Filter>
-    </ClInclude>
-    <ClInclude Include="old\misc\nascarhook_icon.h">
-      <Filter>old\misc\render\assets\textures</Filter>
-    </ClInclude>
-    <ClInclude Include="old\setup\cheat.h">
+    <ClInclude Include="setup\cheat.h">
       <Filter>old\setup\cheat</Filter>
     </ClInclude>
-    <ClInclude Include="old\setup\hooks.h">
+    <ClInclude Include="setup\hooks.h">
       <Filter>old\setup\hooks</Filter>
     </ClInclude>
-    <ClInclude Include="old\setup\interfaces.h">
+    <ClInclude Include="setup\interfaces.h">
       <Filter>old\setup\interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="old\setup\modules.h">
+    <ClInclude Include="setup\modules.h">
       <Filter>old\setup\modules</Filter>
     </ClInclude>
-    <ClInclude Include="old\setup\netvars.h">
+    <ClInclude Include="setup\netvars.h">
       <Filter>old\setup\netvars</Filter>
     </ClInclude>
-    <ClInclude Include="old\setup\offsets.h">
+    <ClInclude Include="setup\offsets.h">
       <Filter>old\setup\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\nascarhook_icon.h">
+      <Filter>old\misc\render\assets\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\detours.h">
+      <Filter>old\misc\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\render.h">
+      <Filter>old\misc\render</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\utilities.h">
+      <Filter>old\misc\utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
